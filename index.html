@@ -5,69 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuração do PC</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Brevia:wght@900&display=swap'); /* Fonte grossa */
-
         body {
+            background-color: #fe394c;
+            color: #ffacb4;
             font-family: 'Brevia', sans-serif;
-            background-color: #fe394c; /* Cor de fundo */
-            color: #ffacb4; /* Cor da fonte */
+            font-size: 16px;
             margin: 0;
-            padding: 20px;
-            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* Sombra do texto mais distante e direcionada para a inferior esquerda */
+            padding: 0;
         }
         h1 {
-            font-size: 5em; /* Tamanho do título aumentado */
             text-align: center;
-            margin-bottom: 20px;
-            font-weight: 900; /* Fonte bem mais grossa */
-        }
-        h2 {
-            font-size: 4em; /* Tamanho do subtítulo aumentado */
-            margin-top: 40px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: 900; /* Fonte bem mais grossa */
+            font-weight: bold;
+            font-size: 2.5em;
+            margin-top: 20px;
         }
         ul {
-            list-style-type: disc; /* Bolinhas antes dos itens */
+            list-style-type: disc;
+            margin: 20px;
             padding-left: 20px;
         }
         li {
-            font-size: 1.8em; /* Tamanho da fonte dos itens aumentado */
             margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 5px 5px 0 #580304;
         }
-        a {
-            color: #ffacb4; /* Cor dos links */
-            text-decoration: none; /* Remove o sublinhado dos links */
-        }
-        a:hover {
-            text-decoration: underline; /* Sublinha os links ao passar o mouse */
-        }
-
-        /* Estilo para os ícones das redes sociais */
-        .social-icons {
+        .socials {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 10px;
+            bottom: 10px;
+            right: 10px;
+            background-color: #580304;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 0 #580304;
         }
-        .social-icons a {
-            display: block;
-            width: 50px;
-            height: 50px;
-            border-radius: 10px; /* Bordas arredondadas */
-            background-color: #580304; /* Cor de fundo dos ícones */
-            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.8); /* Sombra dos ícones */
-            overflow: hidden;
-        }
-        .social-icons img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .social-icons a:hover {
-            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.6); /* Efeito ao passar o mouse */
+        .socials img {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
         }
     </style>
 </head>
@@ -83,8 +57,7 @@
         <li>Gabinete: DK100 White</li>
         <li>WaterCooler: GaleForce 360 V2</li>
     </ul>
-
-    <h2>Periféricos</h2>
+    <h1>Periféricos</h1>
     <ul>
         <li>Mouse: DeathAdder V3 Pro White</li>
         <li>Teclado: Huntsman TE Switch RED</li>
@@ -94,23 +67,18 @@
         <li>MousePad: Gigantus V2 3XL</li>
     </ul>
 
-    <!-- Ícones das redes sociais -->
-    <div class="social-icons">
-        <a href="https://www.youtube.com/channel/UCjIZOoKZfxjXOKx3HXfKQjw" target="_blank" title="YouTube">
+    <div class="socials">
+        <a href="https://www.youtube.com/channel/UCjIZOoKZfxjXOKx3HXfKQjw" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
         </a>
-        <a href="https://www.instagram.com/luizzgs9/" target="_blank" title="Instagram">
+        <a href="https://www.instagram.com/luizzgs9/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
         </a>
-        <a href="https://gamersclub.com.br/player/1261622" target="_blank" title="GamersClub">
-            <img src="https://cdn.gamersclub.com.br/images/avatars/default-avatar.jpg" alt="GamersClub">
+        <a href="https://gamersclub.com.br/player/1261622" target="_blank">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3gDy0Kl4UQIUKE8sLm/30pLeyunQu3tyvfwu3rlW9hd5NczqOwe5te7os/4TZdwdXLVj/PkxOmM9gQKCfsbtNrtQOKCYcz2BAoJdSyRcWEnR6gjFDPFhUSbrV8yUgJFc2gjLDTcaOXE6qawb8Ii35/qOSo9m/Cq6NpI8/0DV+1AeeEuYbAd/NvVgFcKDy1B3yI8L0J4AOERoDlQhtbNJQLraxgsdAOsFBoCFgmNDODsRKhpRUsEtoCFghNbdFQILQGXCw0tkXDUuHlN3PApU9P9oBVhSqBNYU6gRWFSoH1hFqB1YRqgbWEeoGVhIqBdYSagVWEqoE1hLqBM61f5DjnrT9WxbLCM6vrlSsnPGv9oaqWEX7wtII5oastGjJCX1s0TIXnzlZwIvQHHAm9zWBsIHQ3g7FU6Ow20ZcIPW7RkApdbtGQCD0dtgfdCX3OYKwXOp3B2G+h1xmM7YQOTzJ/ikLXwCh0PIOx9Xe3t4m+9Q/fK/gr90AiIiIiIiIiIiIiIiIiIiIiIiIiIiJq1U+3p1K6UdBh2QAAAABJRU5ErkJggg==" alt="GamersClub">
         </a>
-        <a href="https://steamcommunity.com/id/LUiGG1/" target="_blank" title="Steam">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Steam_icon_logo.png" alt="Steam">
+        <a href="https://steamcommunity.com/id/LUiGG1/" target="_blank">
+            <img src="https://logosmarcas.net/wp-content/uploads/2020/11/Steam-Simbolo.jpg" alt="Steam">
         </a>
-        <a href="https://www.twitch.tv/luigg1of" target="_blank" title="Twitch">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Twitch_Icon_2019.svg/512px-Twitch_Icon_2019.svg.png" alt="Twitch">
-        </a>
-    </div>
-</body>
-</html>
+        <a href="https://www.twitch.tv/luigg1of" target="_blank">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3
