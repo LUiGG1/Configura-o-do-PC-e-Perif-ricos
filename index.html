@@ -9,70 +9,78 @@
             background-color: #fe394c;
             color: #ffacb4;
             font-family: 'Brevia', sans-serif;
-            font-size: 16px;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         h1 {
-            text-align: center;
+            font-size: 3em; /* Aumentado o tamanho do título */
             font-weight: bold;
-            font-size: 2.5em;
-            margin-top: 20px;
+            text-shadow: 10px 10px 0 #580304; /* Sombra das letras */
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
         }
         ul {
             list-style-type: disc;
-            margin: 20px;
-            padding-left: 20px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 600px;
         }
         li {
-            margin-bottom: 10px;
-            font-weight: bold;
-            text-shadow: 5px 5px 0 #580304;
+            font-size: 1.2em; /* Aumentado o tamanho do texto */
+            margin: 10px 0;
         }
-        .socials {
+        .social-links {
             position: fixed;
             bottom: 10px;
             right: 10px;
-            background-color: #580304;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 0 #580304;
+            display: flex;
+            gap: 10px;
         }
-        .socials img {
-            width: 30px;
-            height: 30px;
-            margin: 5px;
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 0 #580304; /* Sombra das imagens */
+            transition: transform 0.3s;
+        }
+        .social-links img:hover {
+            transform: scale(1.1); /* Aumenta um pouco o tamanho da imagem ao passar o mouse */
         }
     </style>
 </head>
 <body>
-    <h1>Configuração do PC</h1>
-    <ul>
-        <li>Placa Mãe: Asus TUF Gaming Z790 Plus</li>
-        <li>Processador: Intel Core i9 14900K</li>
-        <li>Placa de Vídeo: MSI RTX 4060Ti Gaming x Slim</li>
-        <li>Armazenamento: SSD Kingston 2T</li>
-        <li>Memória RAM: 32Gb 4600Mhz</li>
-        <li>Fonte: EVGA 1000 GQ</li>
-        <li>Gabinete: DK100 White</li>
-        <li>WaterCooler: GaleForce 360 V2</li>
-    </ul>
-    <h1>Periféricos</h1>
-    <ul>
-        <li>Mouse: DeathAdder V3 Pro White</li>
-        <li>Teclado: Huntsman TE Switch RED</li>
-        <li>Fone: Hyperx Cloud 2</li>
-        <li>Monitor: Jade GM3CC27 (165hz)</li>
-        <li>Microfone: Hyperx QuadCast</li>
-        <li>MousePad: Gigantus V2 3XL</li>
-    </ul>
-
-    <div class="socials">
+    <div class="container">
+        <h1>Configuração do PC</h1>
+        <ul>
+            <li><strong>Placa Mãe:</strong> Asus TUF Gaming Z790 Plus</li>
+            <li><strong>Processador:</strong> Intel Core i9 14900K</li>
+            <li><strong>Placa de Vídeo:</strong> MSI RTX 4060Ti Gaming x Slim</li>
+            <li><strong>Armazenamento:</strong> SSD Kingston 2T</li>
+            <li><strong>Memória RAM:</strong> 32Gb 4600Mhz</li>
+            <li><strong>Fonte:</strong> EVGA 1000 GQ</li>
+            <li><strong>Gabinete:</strong> DK100 White</li>
+            <li><strong>WaterCooler:</strong> GaleForce 360 V2</li>
+        </ul>
+        <h1>Periféricos</h1>
+        <ul>
+            <li><strong>Mouse:</strong> DeathAdder V3 Pro White</li>
+            <li><strong>Teclado:</strong> Huntsman TE Switch RED</li>
+            <li><strong>Fone:</strong> Hyperx Cloud 2</li>
+            <li><strong>Monitor:</strong> Jade GM3CC27 (165hz)</li>
+            <li><strong>Microfone:</strong> Hyperx QuadCast</li>
+            <li><strong>MousePad:</strong> Gigantus V2 3XL</li>
+        </ul>
+    </div>
+    <div class="social-links">
         <a href="https://www.youtube.com/channel/UCjIZOoKZfxjXOKx3HXfKQjw" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3gDy0Kl4UQIUKE8sLm/30pLeyunQu3tyvfwu3rlW9hd5NczqOwe5te7os/4TZdwdXLVj/PkxOmM9gQKCfsbtNrtQOKCYcz2BAoJdSyRcWEnR6gjFDPFhUSbrV8yUgJFc2gjLDTcaOXE6qawb8Ii35/qOSo9m/Cq6NpI8/0DV+1AeeEuYbAd/NvVgFcKDy1B3yI8L0J4AOERoDlQhtbNJQLraxgsdAOsFBoCFgmNDODsRKhpRUsEtoCFghNbdFQILQGXCw0tkXDUuHlN3PApU9P9oBVhSqBNYU6gRWFSoH1hFqB1YRqgbWEeoGVhIqBdYSagVWEqoE1hLqBM61f5DjnrT9WxbLCM6vrlSsnPGv9oaqWEX7wtII5oastGjJCX1s0TIXnzlZwIvQHHAm9zWBsIHQ3g7FU6Ow20ZcIPW7RkApdbtGQCD0dtgfdCX3OYKwXOp3B2G+h1xmM7YQOTzJ/ikLXwCh0PIOx9Xe3t4m+9Q/fK/gr90AiIiIiIiIiIiIiIiIiIiIiIiIiIiJq1U+3p1K6UdBh2QAAAABJRU5ErkJggg==" alt="YouTube">
         </a>
         <a href="https://www.instagram.com/luizzgs9/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3gDy0Kl4UQIUKE8sLm/30pLeyunQu3tyvfwu3rlW9hd5NczqOwe5te7os/4TZdwdXLVj/PkxOmM9gQKCfsbtNrtQOKCYcz2BAoJdSyRcWEnR6gjFDPFhUSbrV8yUgJFc2gjLDTcaOXE6qawb8Ii35/qOSo9m/Cq6NpI8/0DV+1AeeEuYbAd/NvVgFcKDy1B3yI8L0J4AOERoDlQhtbNJQLraxgsdAOsFBoCFgmNDODsRKhpRUsEtoCFghNbdFQILQGXCw0tkXDUuHlN3PApU9P9oBVhSqBNYU6gRWFSoH1hFqB1YRqgbWEeoGVhIqBdYSagVWEqoE1hLqBM61f5DjnrT9WxbLCM6vrlSsnPGv9oaqWEX7wtII5oastGjJCX1s0TIXnzlZwIvQHHAm9zWBsIHQ3g7FU6Ow20ZcIPW7RkApdbtGQCD0dtgfdCX3OYKwXOp3B2G+h1xmM7YQOTzJ/ikLXwCh0PIOx9Xe3t4m+9Q/fK/gr90AiIiIiIiIiIiIiIiIiIiIiIiIiIiJq1U+3p1K6UdBh2QAAAABJRU5ErkJggg==" alt="Instagram">
         </a>
         <a href="https://gamersclub.com.br/player/1261622" target="_blank">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3gDy0Kl4UQIUKE8sLm/30pLeyunQu3tyvfwu3rlW9hd5NczqOwe5te7os/4TZdwdXLVj/PkxOmM9gQKCfsbtNrtQOKCYcz2BAoJdSyRcWEnR6gjFDPFhUSbrV8yUgJFc2gjLDTcaOXE6qawb8Ii35/qOSo9m/Cq6NpI8/0DV+1AeeEuYbAd/NvVgFcKDy1B3yI8L0J4AOERoDlQhtbNJQLraxgsdAOsFBoCFgmNDODsRKhpRUsEtoCFghNbdFQILQGXCw0tkXDUuHlN3PApU9P9oBVhSqBNYU6gRWFSoH1hFqB1YRqgbWEeoGVhIqBdYSagVWEqoE1hLqBM61f5DjnrT9WxbLCM6vrlSsnPGv9oaqWEX7wtII5oastGjJCX1s0TIXnzlZwIvQHHAm9zWBsIHQ3g7FU6Ow20ZcIPW7RkApdbtGQCD0dtgfdCX3OYKwXOp3B2G+h1xmM7YQOTzJ/ikLXwCh0PIOx9Xe3t4m+9Q/fK/gr90AiIiIiIiIiIiIiIiIiIiIiIiIiIiJq1U+3p1K6UdBh2QAAAABJRU5ErkJggg==" alt="GamersClub">
@@ -81,4 +89,8 @@
             <img src="https://logosmarcas.net/wp-content/uploads/2020/11/Steam-Simbolo.jpg" alt="Steam">
         </a>
         <a href="https://www.twitch.tv/luigg1of" target="_blank">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEWRRv8AAAD///9/Pd+VSP9cXFzy8vKYmJjOzs76+vrZ2dlxcXGfn58dDjQ6OjqioqJzN8odHR0xF1bp5+1CH3QmHDQtFlDv7fMRACR+douEfY88HWo/Hm9fX1+ORfqDg4MyMjIlJSW+vr4ZDScfFC+DP+YWBSgrIjmTjJ4QCB1JI4BVjUtBAAACnklEQVR4nO3b63LTMBBAYYUGWiC0lBTMpRR6oVze/wFBwS2yrRisake7yzk/M6kn30gbyzNNCERERERERERERERERERERERERERERERzrQVqbRp08WZVv4PWqjQJoCrhKwmgJqEMUI/wQgioRygyg5qEUiuoRShym1AlHAAf1+jjsSrhcIs+fVSjjSbhaAafVBEe6hFOZtCdcPIl4004vU34EuZOMq6E2aOaK2H2JONJmD+q+RHuO6r5Ee47i7oR7n2acCKceeB1IjzYC0ToWPjp8/Gu09Hj1Un/+uUz68Lnd28YCe+fBBEiRIgQIUKECBEiRIgQIUKECBEiRIjwPxfeW8wLrzYnuw5HwqP+9c3gDy0Kl4UQIUKE8sLm/30pLeyunQu3tyvfwu3rlW9hd5NczqOwe5te7os/4TZdwdXLVj/PkxOmM9gQKCfsbtNrtQOKCYcz2BAoJdSyRcWEnR6gjFDPFhUSbrV8yUgJFc2gjLDTcaOXE6qawb8Ii35/qOSo9m/Cq6NpI8/0DV+1AeeEuYbAd/NvVgFcKDy1B3yI8L0J4AOERoDlQhtbNJQLraxgsdAOsFBoCFgmNDODsRKhpRUsEtoCFghNbdFQILQGXCw0tkXDUuHlN3PApU9P9oBVhSqBNYU6gRWFSoH1hFqB1YRqgbWEeoGVhIqBdYSagVWEqoE1hLqBM61f5DjnrT9WxbLCM6vrlSsnPGv9oaqWEX7wtII5oastGjJCX1s0TIXnzlZwIvQHHAm9zWBsIHQ3g7FU6Ow20ZcIPW7RkApdbtGQCD0dtgfdCX3OYKwXOp3B2G+h1xmM7YQOTzJ/ikLXwCh0PIOx9Xe3t4m+9Q/fK/gr90AiIiIiIiIiIiIiIiIiIiIiIiIiIiJq1U+3p1K6UdBh2QAAAABJRU5ErkJggg==" alt="Twitch">
+        </a>
+    </div>
+</body>
+</html>
