@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuração do PC</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Brevia:wght@900&display=swap'); /* Fonte mais grossa */
+        @import url('https://fonts.googleapis.com/css2?family=Brevia:wght@900&display=swap'); /* Fonte grossa */
 
         body {
             font-family: 'Brevia', sans-serif;
@@ -13,28 +13,61 @@
             color: #ffacb4; /* Cor da fonte */
             margin: 0;
             padding: 20px;
-            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8); /* Sombra do texto ajustada */
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* Sombra do texto mais distante e direcionada para a inferior esquerda */
         }
         h1 {
-            font-size: 3.5em; /* Tamanho do título aumentado */
+            font-size: 5em; /* Tamanho do título aumentado */
             text-align: center;
             margin-bottom: 20px;
-            font-weight: 900; /* Fonte mais grossa */
+            font-weight: 900; /* Fonte bem mais grossa */
         }
         h2 {
-            font-size: 3em; /* Tamanho do subtítulo aumentado */
+            font-size: 4em; /* Tamanho do subtítulo aumentado */
             margin-top: 40px;
             margin-bottom: 20px;
             text-align: center;
-            font-weight: 900; /* Fonte mais grossa */
+            font-weight: 900; /* Fonte bem mais grossa */
         }
         ul {
             list-style-type: disc; /* Bolinhas antes dos itens */
             padding-left: 20px;
         }
         li {
-            font-size: 1.6em; /* Tamanho da fonte dos itens aumentado */
+            font-size: 1.8em; /* Tamanho da fonte dos itens aumentado */
             margin-bottom: 10px;
+        }
+        a {
+            color: #ffacb4; /* Cor dos links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+        a:hover {
+            text-decoration: underline; /* Sublinha os links ao passar o mouse */
+        }
+
+        /* Estilo para os ícones das redes sociais */
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background-color: #ffacb4; /* Cor de fundo dos ícones */
+            overflow: hidden;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* Sombra dos ícones */
+        }
+        .social-icons img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .social-icons a:hover {
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Efeito ao passar o mouse */
         }
     </style>
 </head>
@@ -60,5 +93,24 @@
         <li>Microfone: Hyperx QuadCast</li>
         <li>MousePad: Gigantus V2 3XL</li>
     </ul>
+
+    <!-- Ícones das redes sociais -->
+    <div class="social-icons">
+        <a href="https://www.youtube.com/channel/UCjIZOoKZfxjXOKx3HXfKQjw" target="_blank" title="YouTube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/luizzgs9/" target="_blank" title="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://gamersclub.com.br/player/1261622" target="_blank" title="GamersClub">
+            <img src="https://cdn.gamersclub.com.br/images/avatars/default-avatar.jpg" alt="GamersClub">
+        </a>
+        <a href="https://steamcommunity.com/id/LUiGG1/" target="_blank" title="Steam">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Steam_icon_logo.png" alt="Steam">
+        </a>
+        <a href="https://www.twitch.tv/luigg1of" target="_blank" title="Twitch">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Twitch_Icon_2019.svg/512px-Twitch_Icon_2019.svg.png" alt="Twitch">
+        </a>
+    </div>
 </body>
 </html>
